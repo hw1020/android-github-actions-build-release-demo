@@ -44,7 +44,7 @@ jobs:
       run: sleep 30
       if: steps.changelog.outputs.RELEASE_BODY == 'CANCEL'
 
-    - uses: actions/cache@v2
+    - uses: actions/cache@v4
       with:
         path: |
           ~/.gradle/caches
